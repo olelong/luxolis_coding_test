@@ -38,7 +38,6 @@
   height: auto;
 }
 
-
 .login-form {
   width: 80%;
 }
@@ -62,17 +61,18 @@
   background-image: url("./assets/lock.svg");
 }
 
-input[type="text"]#login {
+input[type="text"]#login,
+input[type="password"]#login {
   width: 100%;
   padding-left: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
 
   border: solid white 1px;
-  font-family: 'Montserrat-light';
+  font-family: "Montserrat-light";
   color: white;
   font-size: 12px;
-  
+
   border-radius: 5px;
 
   background-color: transparent;
@@ -81,7 +81,8 @@ input[type="text"]#login {
   background-size: 15px 15px;
 }
 
-input[type="text"]#login::placeholder {
+input[type="text"]#login::placeholder,
+input[type="password"]#login::placeholder {
   color: white;
 }
 
@@ -94,7 +95,7 @@ input[type="text"]#login::placeholder {
 
 .error-combination-msg {
   color: red;
-  font-family: 'Montserrat-light';
+  font-family: "Montserrat-light";
   font-size: 12px;
 }
 
@@ -112,17 +113,64 @@ input[type="text"]#login::placeholder {
   outline: none;
   border: none;
   border-radius: 5px;
-  
-  font-family: 'Montserrat-semi-bold';
-  color: #2148C0;
+
+  font-family: "Montserrat-semi-bold";
+  color: #2148c0;
   font-size: 13px;
   cursor: pointer;
 }
 
 .login-button:hover {
   color: white;
-  background-color: #2148C0;
+  background-color: #2148c0;
   border: solid 1px white;
+}
+
+/* Modal pop up window part */
+
+.modal-group {
+  position: relative;
+  margin-top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  width: 40%;
+  height: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  outline: none;
+  cursor: default;
+}
+
+.modal-p {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Montserrat-semi-bold";
+  font-size: 16px;
+  color: #2148c0;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 10px;
+
+  background-color: #2148c0;
+  border: solid 2px white;
+  border-radius: 10px;
+  font-family: "Montserrat-semi-bold";
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: white;
+  border: solid 2px #2148c0;
+  border-radius: 10px;
+  font-family: "Montserrat-semi-bold";
+  color: #2148c0;
+  font-size: 16px;
 }
 
 /* Forgot Password Part */
@@ -132,7 +180,7 @@ input[type="text"]#login::placeholder {
   top: -5px;
 
   text-align: right;
-  font-family: 'Montserrat-medium';
+  font-family: "Montserrat-medium";
   color: white;
   font-size: 13px;
   cursor: pointer;
