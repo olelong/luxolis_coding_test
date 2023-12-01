@@ -59,7 +59,7 @@ function Login() {
             <div className="login-group">
               <input
                 type="password"
-                id="login"
+                id="login-pass"
                 placeholder="PASSWORD"
                 className="password-input"
                 value={passwordInput}
@@ -88,6 +88,7 @@ function Login() {
                 style={{
                   overlay: { backgroundColor: "rgba(33, 72, 192, 0.5)" },
                 }}
+                ariaHideApp={false}
               >
                 <button onClick={closeModal} className="modal-close-button">
                   X

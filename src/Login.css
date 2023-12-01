@@ -62,7 +62,7 @@
 }
 
 input[type="text"]#login,
-input[type="password"]#login {
+input[type="password"]#login-pass {
   width: 100%;
   padding-left: 45px;
   padding-top: 10px;
@@ -81,12 +81,19 @@ input[type="password"]#login {
 }
 
 input[type="text"]#login::placeholder,
-input[type="password"]#login::placeholder {
+input[type="password"]#login-pass::placeholder {
   color: white;
 }
 
 #login:focus,
 #login:active {
+  outline: none;
+  border: solid white 1px !important;
+  box-shadow: none;
+}
+
+#login-pass:focus,
+#login-pass:active {
   outline: none;
   border: solid white 1px !important;
   box-shadow: none;
