@@ -92,6 +92,12 @@ input[type="text"]#login::placeholder {
   box-shadow: none;
 }
 
+.error-combination-msg {
+  color: red;
+  font-family: 'Montserrat-light';
+  font-size: 12px;
+}
+
 /* Button Part */
 
 .login-button {
